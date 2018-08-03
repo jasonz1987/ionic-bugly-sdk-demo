@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Bugly SDK Demo
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>功能配置</h2>
+  <button ion-button full block (click)="setTagID()">设置TagID</button>
+  <button ion-button full block (click)="setUserID()">设置UserID(限IOS)</button>
+  <button ion-button full block (click)="setUserData()">设置UserData</button>
+
+  <h2>崩溃测试</h2>
+  <button ion-button full block (click)="testJSCrash()">测试JS崩溃</button>
+  <button ion-button full block (click)="testJavaCrash()">测试Java崩溃</button>
+  <button ion-button full block (click)="testNativeCrash()">测试Native崩溃</button>
+  <button ion-button full block (click)="testANRCrash()">测试ANR崩溃</button>
+
+  <button ion-button full block (click)="testOCCrash()">测试OC崩溃</button>
+
+</ion-content>
